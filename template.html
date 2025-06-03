@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Loving Memory of $name</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f4f1ec;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 2em auto;
+      background: #fff;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 1em;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+    }
+    .dates {
+      font-style: italic;
+      color: #777;
+    }
+    .section {
+      margin-top: 2em;
+      text-align: left;
+    }
+    .section h2 {
+      font-size: 1.4em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+    .quote {
+      font-style: italic;
+      margin-top: 1em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>In Loving Memory of $name</h1>
+    <p class="dates">$birth_year – $death_year</p>
+    <img src="$photo_filename" alt="Photo of $name">
+    
+    <div class="section">
+      <h2>Biography</h2>
+      <p>$biography</p>
+    </div>
+
+    <div class="section">
+      <h2>Condolences</h2>
+      <p>$condolence1</p>
+      <p>$condolence2</p>
+    </div>
+
+    <div class="section quote">
+      $quote
+    </div>
+  </div>
+</body>
+</html>
